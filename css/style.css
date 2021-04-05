@@ -7,3 +7,356 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+:root{
+    --green: #035755;
+    --red: #FB4C47;
+    --grey: #4B4F51;
+}
+
+
+.logo-text{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--green);
+    margin-left: 10px;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-covid{
+    width: 50px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-link{
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--green);
+    transition: all 0.3s;
+}
+
+.nav-list-item{
+    position: relative;
+}
+
+.nav-list-item:hover .nav-link{
+    color: var(--red);
+}
+
+
+.nav-link-contact{
+    border: 2px solid #FF383D;
+    padding: 10px 30px;
+    color: #FF383D;
+    border-radius: 46px;
+    transition: all 0.3s;
+}
+
+.nav-link-contact:hover{
+    background-color: var(--red);
+    color: #fff !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.current{
+    background-color: var(--red);
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -50%;
+    left: 47%;
+    right: 50%;
+}
+
+.current-item{
+    color: var(--red);
+}
+
+/* heading */
+
+.heading .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading{
+    background-image: url(../img/sitting-down.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.bg-color{
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) -29.64%, #FFF8F8 50%, #B57474 500%);
+}
+
+.header-span, .header-title, .let-help, .info-title, .info-span{
+    margin-bottom: 20px;
+}   
+
+.header-title{
+    color: var(--green);
+    font-size: 40px;
+}
+
+.header{
+    width: 40%;
+    margin: 200px 0 100px 0;
+}
+
+.header-p{
+    line-height: 190%;
+    text-transform: capitalize;
+    color: var(--grey);
+}
+
+.header-span{
+    color: var(--red);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.let-help{
+    background-color: var(--red);
+    color: #fff;
+    padding: 15px 35px;
+    font-weight: 500;
+    box-shadow: 0px 8px 87px rgba(0 0, 0, 0.1);
+    border-radius: 65px;
+}
+
+/* covid-info */
+
+.covid-info .container{
+    display: flex;
+    align-items: center;
+}
+
+.covid-info{
+    background-image: url(../img/bg-virus-pink.png);
+    background-repeat: no-repeat;
+    background-position: right -15% bottom -18%;
+}
+
+.colorful-viruses{
+    width: 50%;
+    object-fit: cover;
+    transform: rotate(-7deg);
+}
+
+.info-title {
+    color: var(--green);
+    font-size: 38px;
+}
+
+.let-help-light {
+    background-color: #FA565250;
+    color: #FA5652;
+    padding: 15px 35px;
+    font-weight: 500;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+}
+
+.info-span {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info {
+    width: 40%;
+    margin: 200px 0 200px 0;
+}
+
+/* contagion */
+
+.contagion{
+    background-image: url(../img/bg-virus-little.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.contagion-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.contagion-header span{
+    margin-bottom: 0;
+}
+
+.contagion-list{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.contagion-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    padding: 30px 50px 70px 50px;
+    box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: all 0.5s;border-bottom: #fff solid 6px; 
+    cursor: pointer;
+}
+
+
+.con-item-img{
+    width: 90%;
+    padding: 20px;
+}
+
+.con-item-p {
+    line-height: 190%;
+    text-transform: capitalize;
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.con-item-name{
+    font-size: 25px;
+    color: var(--green);
+    margin-bottom: 14px;
+}
+
+.contagion-item:hover{
+    border-bottom: var(--red) solid 6px;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    z-index: 2;
+}
+
+/* symptomps */
+
+.symptomps .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../img/bg-shape.png), url(../img/bg-shape-big.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 30%, right bottom 15%;
+    background-size: 12%, 15%;
+}
+
+.ill-girl-img{
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+/* rules */
+
+.rules{
+    background-image: url(../img/bg-virus-green.png), url(../img/bg-virus-green-little.png), url(../img/bg-virus-darkpink.png);
+    background-repeat: no-repeat;
+    background-size: 20%, 6%, 20%;
+    background-position: left -12% top 30%, right 4%  bottom 18%, right -12% bottom 2%;
+}
+
+.rules-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.rules-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.rules-list-item:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.rule-image{
+    width: 30%;
+}
+
+.rule-box{
+    display: flex;
+    width: 45%;
+}
+
+.rule-number{
+    padding: 16px;
+    height: 50px;
+    width: 50px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: #FA565250;
+}
+
+.rule{
+    margin: 10px 40px;
+}
+
+.rule-title{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.rule-info{
+    font-size: 16px;
+    line-height: 221%;
+    text-transform: capitalize;
+    color: #4B4F51;
+}
