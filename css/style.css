@@ -363,3 +363,28 @@ background-position: top right, left -3% bottom;
     text-transform: capitalize;
     color: #4B4F51;
 }
+
+/* statistics */
+
+.statistics .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-box{
+    position: relative;
+    width: 70%;
+}
+
+.statistics-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.stc-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
