@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -208,10 +208,11 @@ a{
 /* contagion */
 
 .contagion{
-    background-image: url(../img/bg-virus-little.png);
+    background-image: url(../img/bg-virus-little.png), url(../img/bg-virus-pink.png);
     background-repeat: no-repeat;
-    background-position: top right;
+background-position: top right, left -3% bottom;
 }
+
 
 .contagion-header{
     display: flex;
@@ -244,8 +245,10 @@ a{
     margin: 20px;
     padding: 30px 50px 70px 50px;
     box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
     border-radius: 10px;
-    transition: all 0.5s;border-bottom: #fff solid 6px; 
+    transition: all 0.5s;
+    border-bottom: #fff solid 6px; 
     cursor: pointer;
 }
 
